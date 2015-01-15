@@ -40,7 +40,7 @@ def store_id_check_in(request, store_id = False):
 
 @require_http_methods(["GET"])
 def store_id(request, store_id):
-    prefix_key = int(time.time()/3).__str__()
+    prefix_key = int(time.time()/10).__str__()
     message = '[%s]%s[%s]' % (prefix_key, store_id, prefix_key)
 
     img = qrcode.make(message)
