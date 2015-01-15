@@ -11,10 +11,12 @@ import qrcode
 @require_http_methods(["GET"])
 def home(request):
     return http.HttpResponse(
-        'request get  -> /store/:store_id/\r\n'
-        'request post -> /store/:store_id/check_in/\r\n'
-        '        data -> {"store_id": "69678687687"}\r\n'
-        '        resp -> {"uri_store_id": "1", "data_store_id": "2", "equal": false}\r\n',
+        'request get  -> /store/:store_id/\n'
+        '        qrcode decode -> [$random]$store_id[$random]\n'
+        '\n'
+        'request post -> /store/:store_id/check_in/\n'
+        '        data -> {"store_id": "69678687687"}\n'
+        '        resp -> {"uri_store_id": "1", "data_store_id": "2", "equal": false}\n',
         content_type='text/plain')
 
 @require_http_methods(["POST"])
