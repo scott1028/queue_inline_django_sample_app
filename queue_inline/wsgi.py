@@ -17,7 +17,7 @@ import os
 import sys
 
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "../venv/Lib/site-packages/"))
+# sys.path.append(os.path.join(os.path.dirname(__file__), "../venv/Lib/site-packages/"))
 # sys.path.append('C:\\Users\\scott\\Desktop\\QR\\engineapp\\venv\\Lib\\site-packages')
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
