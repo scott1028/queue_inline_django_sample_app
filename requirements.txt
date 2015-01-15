@@ -1,0 +1,3 @@
+qrcode
+image
+django>=1.7
